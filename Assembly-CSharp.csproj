@@ -68,16 +68,16 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\ScoreDisplay.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/erikp/OneDrive/Documents/Unity/Poképrofiles/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/erikp/Documents/GitHub/RhythmGameExperiment/Poképrofiles/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/erikp/OneDrive/Documents/Unity/Poképrofiles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/erikp/Documents/GitHub/RhythmGameExperiment/Poképrofiles/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/erikp/OneDrive/Documents/Unity/Poképrofiles/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/erikp/Documents/GitHub/RhythmGameExperiment/Poképrofiles/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/erikp/OneDrive/Documents/Unity/Poképrofiles/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/erikp/Documents/GitHub/RhythmGameExperiment/Poképrofiles/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
