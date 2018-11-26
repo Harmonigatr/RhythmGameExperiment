@@ -5,9 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
     public UnityEngine.Sprite[] Expressions;
     private Rigidbody2D rb2d;
-    private Vector2 translationVector = new Vector2();
-    private float speed = 3,
-                  accelerationSpeed = 0.1f;
+    private float speed = 10;
 
     private bool isAlive = true;
 
