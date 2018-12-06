@@ -415,7 +415,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -556,7 +556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1685564580581628, guid: 46c7e8229267fd443922faaf8ce005c1, type: 2}
-  SpawnRate: 2
 --- !u!1 &1618851996
 GameObject:
   m_ObjectHideFlags: 0
