@@ -11,7 +11,9 @@ public class Player : MonoBehaviour {
     private Vector2 translationVector = new Vector2();
     private float speed = 10,
                   accelerationSpeed = 0.1f,
-                  jumpHeight = 5;
+                  jumpHeight = 5,
+                  Timer = 0.0f;
+    private const float AttLim = 0.3f;
 
     public PlayerStates currentState;
 
@@ -20,14 +22,16 @@ public class Player : MonoBehaviour {
     }
 
     void Update() {
-
-        if (Input.GetKey(KeyCode.D)) { //Handle Attack
+        Timer += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.Space)) { //Handle Attack
             this.GetComponent<SpriteRenderer>().sprite = Expressions[1];
             currentState = PlayerStates.Attack;
+            Timer = 0.0f;
         }
-        if (Input.GetKeyUp(KeyCode.D)){
+        if (Input.GetKeyUp(KeyCode.Space) || (this.GetComponent<SpriteRenderer>().sprite == Expressions[1] && currentState == PlayerStates.Attack && Timer >= AttLim)) {
             this.GetComponent<SpriteRenderer>().sprite = Expressions[0];
             currentState = PlayerStates.Idle;
+            Timer = Timer - AttLim;
         }
 
         if (Input.GetKeyDown(KeyCode.W)) { //Handle Jump
