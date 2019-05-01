@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour {
 
     public GameObject enemy;
     private float SpawnAtX = 5.6f;
-    private float[]PhySo3 = {0.00f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.5f,0.4f,0.2f,0.2f,0.45f,
+    private float[]PhySo3 = {-0.60f, 0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.5f,0.4f,0.2f,0.2f,0.45f,
                              0.95f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.5f,0.4f,0.2f,0.2f,0.45f,
                              0.95f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.5f,0.4f,0.2f,0.2f,0.45f,
                              0.95f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.4f,0.5f,0.4f,0.2f,0.2f,0.45f,

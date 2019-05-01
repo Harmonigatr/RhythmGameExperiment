@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-    public static Player Instance { get { return _instance; } }
-    private static Player _instance;
+    //public static Player Instance { get { return _instance; } }
+    //private static Player _instance;
 
     public UnityEngine.Sprite[] Expressions;
     private Rigidbody2D rb2d;

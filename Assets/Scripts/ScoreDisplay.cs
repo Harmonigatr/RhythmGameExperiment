@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class ScoreDisplay : MonoBehaviour {
 
-    public static ScoreDisplay Instance { get { return _instance; } }
-    private static ScoreDisplay _instance;
+    //public static ScoreDisplay Instance { get { return _instance; } }
+    //private static ScoreDisplay _instance;
 
     private static int _score;
 
@@ -22,7 +22,7 @@ public class ScoreDisplay : MonoBehaviour {
     }
 
     private void UpdateScore() {
-        Score.text = "X " + _score.ToString();
+        Score.text = "Score: " + _score.ToString();
     }
 
     private void Update() {

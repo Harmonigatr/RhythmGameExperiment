@@ -5,18 +5,20 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
     public UnityEngine.Sprite[] Expressions;
     private Rigidbody2D rb2d;
+    private Vector2 speedVector;
+    public ScoreDisplay SD;
+
     private float speed = 10;
 
     private bool isAlive = true;
 
     public static List<Enemy> Enemies = new List<Enemy>();
 
-    private Vector2 speedVector = new Vector2();
-
-    private ScoreDisplay SD = new ScoreDisplay();
 
     private void Awake() {
         rb2d = GetComponent<Rigidbody2D>();
+        speedVector = new Vector2();
+        //SD = GetComponent<ScoreDisplay>();
     }
 
     void Start() {
@@ -27,8 +29,7 @@ public class Enemy : MonoBehaviour {
         if (isAlive) {
             rb2d.velocity = -speedVector;
         }
-        if (this.transform.position.x <= -5.5f)
-        {
+        if (this.transform.position.x <= -5.5f) {
             Kill();
         }
     }
@@ -38,9 +39,12 @@ public class Enemy : MonoBehaviour {
         if (Player == null) { return; } 
         if (Player.currentState == PlayerStates.Attack) {
             this.GetComponent<SpriteRenderer>().sprite = Expressions[1];
+            //Debug.Log("gof");
             SD.IncrementScore(1);
+            Debug.Log("point!");
         }
         Kill();
+        Debug.Log("oof");
     }
 
     /// <summary>

@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 380217091
     locked: 0
+  - name: Tiles
+    uniqueID: 1450733525
+    locked: 0
   - name: Player
     uniqueID: 1640572943
     locked: 0

@@ -3,8 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
-{
+public class GameManager : MonoBehaviour {
 
     public static GameManager Instance { get { return _instance; } }
     private static GameManager _instance;
@@ -205,7 +204,6 @@ public class GameManager : MonoBehaviour
     /********************************************************************************************/
     /****************************************** ENUMS *******************************************/
     /********************************************************************************************/
-
 
     public enum GameState {
         START_SCREEN,
